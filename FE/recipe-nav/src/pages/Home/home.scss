@@ -1,0 +1,465 @@
+@import "./default.scss";
+// @import "./custom.scss";
+
+.page {
+    &-wrapper {
+        width: 100%;
+        will-change: transform;
+    }
+
+    width: 100%;
+    max-width: 1250px;
+    padding: 0 24px;
+    margin: auto;
+    overflow: hidden;
+
+    > h1 {
+        margin: 144px auto 32px;
+        font-size: 38px;
+        line-height: 46px;
+        color: #0d1a26;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+    > i {
+        width: 64px;
+        margin: auto;
+        height: 2px;
+        display: block;
+        background: rgb(22, 217, 227);
+        background: linear-gradient(to right, rgba(22, 217, 227, 1) 0%, rgba(22, 119, 227, 1) 100%);
+    }
+}
+
+.banner-anim {
+    &-arrow {
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+    }
+
+    &:hover {
+        .banner-anim-arrow {
+            opacity: 1;
+        }
+    }
+}
+
+.banner {
+    background: #EAF2CE no-repeat center top;
+    background-size: contain;
+    overflow: hidden;
+    font-family: PingFang SC, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 12px;
+
+    .chart {
+        height: 300px;
+
+        min-height: 275px;
+        max-height: 275px;
+    }
+
+    .chartCard {
+
+        .img-wrap {
+            width: 90px;
+            height: auto;
+            float: top;
+        }
+
+        .content {
+            width: 100%;
+            font-size: 18px;
+            text-align: right;
+
+            .title {
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                padding-top: 11px;
+                line-height: 32px;
+                font-size: 2rem;
+                margin-bottom: 8px;
+                height: auto;
+            }
+
+            .up {
+                color: red;
+
+            }
+
+            .down {
+                color: blue;
+
+            }
+
+            .number {
+                line-height: 32px;
+                font-size: 24px;
+                height: 32px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .page {
+        max-width: 1248px;
+
+        h1 {
+            text-align: left;
+            margin-left: 12px;
+        }
+    }
+
+    & &-anim {
+        margin: 0 auto 64px;
+        height: 600px;
+        box-shadow: 0 20px 32px rgba(1, 4, 8, .12);
+        background: #fff;
+        border-radius: 8px;
+
+        &-elem {
+            .banner-bg {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .content-wrap {
+        margin: 0 auto 64px;
+        box-shadow: 0 20px 32px rgba(1, 4, 8, .12);
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    .seeconf {
+        &-wrap {
+            text-align: center;
+            color: banner-text-color;
+            height: 400px;
+            .banner-button {
+                height: 60px;
+                line-height: 35px;
+                border-radius: 35px;
+                background: #A68D60;
+                width: 250px;
+                padding: 0 28px;
+                font-size: 20px;
+                color: white;
+            }
+        }
+
+        &-en-name {
+
+            line-height: 32px;
+            font-size: 25px;
+            // bottom: 0;
+        }
+
+        &-title {
+            margin-top: 200px;
+            font-size: 42px;
+            line-height: 68px;
+            text-indent: 2px;
+            font-weight: 600;
+
+        }
+
+        &-cn-name {
+            font-size: 18px;
+        }
+    }
+}
+
+.graph {
+    background: green center top;
+    background-size: contain;
+    overflow: hidden;
+    font-family: PingFang SC, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    // padding-top: 80px;
+
+    .page {
+        background: green;
+        max-width: 1248px;
+    }
+
+    .graph-bg {
+        margin: 0 auto 64px;
+        height: 100%;
+        box-shadow: 0 20px 32px rgba(1, 4, 8, .12);
+        background: #fff;
+        border-radius: 8px;
+    }
+
+    .title {
+        margin: 16px 0 24px;
+        font-size: 56px;
+        line-height: 68px;
+        text-indent: 2px;
+        font-weight: 600;
+        color: red;
+    }
+}
+
+.page1 {
+    background: #EAF2CE;
+    font-family: PingFang SC, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 12px;
+    overflow: hidden;
+    background-size: contain;
+
+    .page {
+        h1 {
+            text-align: left;
+            margin-left: 12px;
+
+        }
+    }
+
+    .contents-wrap {
+        box-shadow: 0 20px 32px rgba(1, 4, 8, .12);
+        background: #fff;
+        border-radius: 4px;
+        height: auto;
+        margin: 0 auto 64px;
+    }
+
+    .contents {
+        contents: 5px;
+    }
+
+    &-item {
+        &-title {
+            font-size: 20px;
+            color: #0D1A26;
+        }
+
+        &-contents {
+            height: auto;
+        }
+
+        &-content-wrapper {
+            height: 250px;
+        }
+
+        &-content {
+            box-shadow: 0 20px 32px rgba(1, 4, 8, .12);
+            background: blue;
+            height: 240px;
+            margin: 5px;
+            border-radius: 8px;
+            font-size: 40px;
+            color: wheat;
+        }
+    }
+}
+
+.page2 {
+    background: #EAF2CE;
+    font-family: PingFang SC, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 12px;
+    overflow: hidden;
+    background-size: contain;
+
+    .page {
+        h1 {
+            text-align: left;
+            margin-left: 12px;
+        }
+    }
+
+    .contents-wrap {
+        box-shadow: 0 20px 32px rgba(1, 4, 8, .12);
+        background: #fff;
+        border-radius: 4px;
+        height: auto;
+        margin: 0 auto 64px;
+    }
+
+    .box {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+
+        .contents {
+            white-space: nowrap;
+            overflow-x: auto;
+            text-align: center;
+
+            -ms-overflow-style: none;
+            /* 인터넷 익스플로러 */
+            scrollbar-width: none;
+            /* 파이어폭스 */
+
+            .card-item {
+                display: inline-block;
+                padding: 10px 20px;
+                margin-right: 10px;
+                &-title {
+                    font-size: large;
+                    font-weight: 700;
+                    color: black;
+                    text-align: center;
+                }
+            }
+        }
+
+        .contents::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+}
+
+.page3 {
+    background: #EAF2CE;
+    font-family: PingFang SC, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 12px;
+    overflow: hidden;
+    background-size: contain;
+
+    .page {
+        h1 {
+            text-align: left;
+            margin-left: 12px;
+        }
+    }
+
+    .contents-wrap {
+        box-shadow: 0 20px 32px rgba(1, 4, 8, .12);
+        background: #fff;
+        border-radius: 4px;
+        height: auto;
+        margin: 0 auto 64px;
+    }
+
+    .other {
+        border: solid;
+        border-color: #EAF2CE;
+
+        &-title {
+            font-size: large;
+            font-weight: 700;
+            color: black;
+            text-align: right;
+        }
+
+        &-priceRate {
+            &-up {
+                font-size: small;
+                font-weight: 700;
+                color: red;
+                text-align: right;
+            }
+
+            &-down {
+
+                font-size: small;
+                font-weight: 700;
+                color: blue;
+                text-align: right;
+            }
+        }
+    }
+
+    .chart {
+        &-bg {
+            width: 90px;
+            height: 90px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            border-radius: 100%;
+            z-index: 1;
+        }
+
+        &-title {
+            font-size: large;
+            font-weight: 700;
+            color: black;
+            text-align: right;
+        }
+
+        &-priceRate {
+            &-up {
+                font-size: small;
+                font-weight: 700;
+                color: red;
+                text-align: right;
+            }
+
+            &-down {
+
+                font-size: small;
+                font-weight: 700;
+                color: blue;
+                text-align: right;
+            }
+        }
+    }
+    .banner-anim-thumb {
+        bottom: 30px;
+    }
+    &-item {
+        display: flex;
+
+        .banner-bg {
+            width: 90px;
+            height: 90px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            border-radius: 100%;
+            z-index: 1;
+        }
+
+        &-link {
+            display: block;
+            width: 180px;
+            margin: auto;
+            height: auto;
+            text-align: center;
+        }
+
+        &-img {
+            width: 90px;
+            height: 90px;
+
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            background: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        &-title {
+            margin-top: 12px;
+            font-size: 20px;
+            color: #0D1A26;
+        }
+
+        p {
+            color: #697B8C;
+            font-size: 10px;
+            margin-top: 8px;
+        }
+    }
+}

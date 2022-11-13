@@ -1,0 +1,35 @@
+.review-box {
+  margin-bottom: 20px;
+  border: 1px solid #aad994;
+  background-color: #eaf2ce;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.review-head {
+  display: flex;
+  line-height: 20px;
+}
+
+.review-body {
+  margin-left: 20px;
+}
+.review-title {
+  font-weight: bold;
+  font-size: large;
+}
+.review-content {
+  font-size: medium;
+  margin-left: 10px;
+}
+.review-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 20px 0 10px;
+}
+.review-date {
+}
+.review-grade {
+  color: rgb(225, 225, 0);
+  margin-left: 20px;
+}

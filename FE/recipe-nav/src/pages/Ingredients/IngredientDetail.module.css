@@ -1,0 +1,62 @@
+/**/
+.ingredient-detail-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 5px #8d9081;
+  }
+  /*contain(식자재 설명 ... )*/
+  .ingredient-detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  /*식자재 설명 왼쪽*/
+  .ingredient-detail-head-post {
+    flex-grow: 5;
+  }
+  /*식자재 설명*/
+  .ingredient-detail-desc {
+    flex-grow: 5;
+    width: 350px;
+  }
+  .ingredient-detail-desc > p {
+    margin-top: 20px;
+    
+  }
+
+  .recipe-detail-head {
+    display: flex;
+  }
+  .recipe-detail-head > *:last-child{
+    margin-bottom: 2px;
+  }
+
+  .category-text {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #a68d60;
+  }
+ 
+  .back-page {
+    position: sticky;
+    display: inline;
+    left: 0px;
+    top: 90px;
+    font-size: 40px;
+    background-color: #eaf2ce;
+    padding-bottom: 10px;
+    border: 2px solid #7e6d4e;
+    border-left: none;
+    border-radius: 5px;
+    color: #7e6d4e;
+  }
+  .back-page:hover {
+    cursor: pointer;
+    background-color: #c0c6aa;
+  }
+  
+
+
+  
+ 
